@@ -1,0 +1,21 @@
+# generated Celeris datasets (bathy.txt is ~6 MB per event; regenerate with the script)
+data/
+*.bin
+*.npz
+overlay.jpg
+
+# thesis and documents
+*.docx
+*.pdf
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.ipynb
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
