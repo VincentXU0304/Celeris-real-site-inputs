@@ -4,7 +4,7 @@ Build a complete, real [Celeris](https://github.com/plynett/plynett.github.io) i
 
 Celeris is a phase-resolving Boussinesq nearshore wave model. Running it on a real site means producing three things in exactly the format it expects: an ASCII bathymetry grid, a `waves.txt` list of spectral components, and a `config.json`. This repository does that for Ocean Beach, San Francisco, driven by NOAA CUDEM topobathymetry and Open-Meteo Marine sea states.
 
-It was written for an MSc thesis (2026) on training-free coastal video generation, where the Celeris free-surface field is used as a structure-control signal for a frozen video generator. The bathymetry and wave front end is reusable on its own, so it is released separately here.
+It was written for personal research use, in work on training-free coastal video generation, where the Celeris free-surface field is used as a structure-control signal for a frozen video generator. The bathymetry and wave front end is reusable on its own, so it is released separately here.
 
 ## What it produces
 
@@ -49,7 +49,7 @@ python make_overlay.py data/celeris_oceanbeach_2023-01-05_flood
 - `make_overlay.py` uses a wider bounding box than `build_oceanbeach_celeris.py`. Its own comment says the two must match, and they currently do not. Set them equal before relying on the overlay for spatial alignment.
 - The site is Ocean Beach specific: the bounding box, the CUDEM tile and the destination CRS are constants near the top of the script. Moving to another site means editing those three values and checking that the offshore boundary still lands on the intended edge.
 
-## Downstream use in the thesis
+## Downstream use
 
 Included for context, not required by this repository. The Celeris grayscale free-surface elevation video was used as a structure control for a frozen video generator: Wan2.2 TI2V-5B with the `alibaba-pai/Wan2.2-Fun-5B-Control` control model, 45 frames at 832x480, on a single 24 GB consumer GPU.
 
