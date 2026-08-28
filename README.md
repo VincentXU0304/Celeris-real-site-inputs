@@ -4,7 +4,7 @@ Build a complete, real [Celeris](https://github.com/plynett/plynett.github.io) i
 
 Celeris is a phase-resolving Boussinesq nearshore wave model. Running it on a real site means producing three things in exactly the format it expects: an ASCII bathymetry grid, a `waves.txt` list of spectral components, and a `config.json`. This repository does that for Ocean Beach, San Francisco, driven by NOAA CUDEM topobathymetry and Open-Meteo Marine sea states.
 
-It was written for an MSc thesis at HKUST (2026) on training-free coastal video generation, where the Celeris free-surface field is used as a structure-control signal for a frozen video generator. The bathymetry and wave front end is reusable on its own, so it is released separately here.
+It was written for an MSc thesis (2026) on training-free coastal video generation, where the Celeris free-surface field is used as a structure-control signal for a frozen video generator. The bathymetry and wave front end is reusable on its own, so it is released separately here.
 
 ## What it produces
 
